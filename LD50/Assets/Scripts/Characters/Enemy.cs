@@ -41,6 +41,9 @@ public class Enemy : CharacterController
 
     private void FixedUpdate()
     {
+        if (dead)
+            return;
+
         Vector2 targetPos = GameManager.Player.transform.position;
         float distanceToTarget = Vector2.Distance(targetPos, transform.position);
 
