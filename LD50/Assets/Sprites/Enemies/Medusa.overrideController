@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Medusa
+  m_Controller: {fileID: 9100000, guid: fdd02b720f7cd4577881ca418f37d585, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ad21d7a0b4316044b9af5ecae1406778, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 90e677a9f65e1494a92e826f9104bbc9, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 830a39ae804e0754286c6a27dfc0ca19, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d3e920100b81b7948973c0fe1648e1c3, type: 2}

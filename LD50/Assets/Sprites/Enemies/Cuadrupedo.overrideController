@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cuadrupedo
+  m_Controller: {fileID: 9100000, guid: fdd02b720f7cd4577881ca418f37d585, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 965aaba0fcb43874a9aca6c99bd0533e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: bce6cee1513a941118310a618ecbfb15, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ad21d7a0b4316044b9af5ecae1406778, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b37557923cfa742128d844318e77a4f7, type: 2}
