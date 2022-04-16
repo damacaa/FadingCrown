@@ -16,6 +16,7 @@ public abstract class CharacterController : MonoBehaviour
     public int direction = 1;
 
     public bool dead;
+    protected bool attacking = false;
 
     protected MovementController movementController;
     protected AttackController attackController;

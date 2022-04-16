@@ -22,13 +22,13 @@ public class Player : CharacterController
 
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    /*private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
             Hurt(1);
         }
-    }
+    }*/
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

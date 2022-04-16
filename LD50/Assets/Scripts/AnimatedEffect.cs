@@ -80,7 +80,7 @@ public class AnimatedEffect : MonoBehaviour
     #endregion
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<CharacterController>(out CharacterController cc))
+        if (collision.TryGetComponent<CharacterController>(out CharacterController cc) && cc != user)
         {
             ApplyEffect(cc);
         }
