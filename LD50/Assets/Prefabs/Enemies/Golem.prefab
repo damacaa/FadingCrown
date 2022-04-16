@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50a16eba5dd6f7c4bbcbc3fe72294639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 6
   health: 0
   invencibilityTime: 0.5
   direction: 1
@@ -134,8 +134,8 @@ MonoBehaviour:
   contactDamage: 1
   maxDistanceFromStart: 15
   visionRange: 10
-  attackRange: 1
-  center: {x: 0, y: -0.91}
+  attackRange: 1.5
+  center: {x: 0, y: -0.7}
   updateRate: 1
 --- !u!114 &4324954772297077903
 MonoBehaviour:

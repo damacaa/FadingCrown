@@ -11,7 +11,13 @@ public class SoundController : MonoBehaviour
     {
         self = GetComponent<AudioSource>();
         if (defaultVolume == 0)
-            defaultVolume = 0.2f;
+        { if (gameObject.CompareTag("ZonaVoice"))
+                { defaultVolume = 0.8f; }
+                else
+                { 
+                defaultVolume = 0.2f;
+                }
+        }
         else
             defaultVolume = self.volume;
     }

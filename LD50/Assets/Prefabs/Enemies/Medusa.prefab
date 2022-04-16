@@ -193,7 +193,7 @@ MonoBehaviour:
   contactDamage: 1
   maxDistanceFromStart: 20
   visionRange: 15
-  attackRange: 0.3
+  attackRange: 0.8
   center: {x: 0.06, y: 0.11}
   updateRate: 0.2
 --- !u!114 &541285234938679188
@@ -246,6 +246,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.06, y: 0.15}
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: 0.35

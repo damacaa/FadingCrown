@@ -97,6 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemigoSpawneable: {fileID: 6353876462860068393, guid: 4a52632f07dc64c0c8617ae17b656d9f, type: 3}
   timeSpawn: 10
-  visionX: 20
-  visionY: 35
+  visionX: 40
+  visionY: 45
   right: 0

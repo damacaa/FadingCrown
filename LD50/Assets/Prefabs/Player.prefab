@@ -545,7 +545,7 @@ MonoBehaviour:
   defaultGravity: 8
   reducedGravityMultiplier: 0.5
   coyoteTime: 0.1
-  jumpBufferTime: 0.5
+  jumpBufferTime: 0.05
   canFly: 0
   canDoubleJump: 1
   canDash: 1
@@ -645,6 +645,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: dbd87b79-7500-4d67-9b95-b8f9039844ed
     m_ActionName: Player/Down[/Keyboard/s,/Keyboard/downArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3ed8abde-8f31-4282-801e-dd4f6f10f86f
+    m_ActionName: Player/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

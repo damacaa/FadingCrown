@@ -261,6 +261,17 @@ public partial class @InputController : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""e4267aa4-2be0-48c5-a5b4-4ff1599c376b"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5970ff94-3f9f-4196-8d7a-56ec2845d92f"",
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
