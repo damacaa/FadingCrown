@@ -135,7 +135,7 @@ MonoBehaviour:
   maxDistanceFromStart: 15
   visionRange: 10
   attackRange: 1
-  attackCenter: {x: 0, y: -0.87}
+  center: {x: 0, y: -0.91}
   updateRate: 1
 --- !u!114 &4324954772297077903
 MonoBehaviour:

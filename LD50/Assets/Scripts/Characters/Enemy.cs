@@ -20,7 +20,7 @@ public class Enemy : CharacterController
     [SerializeField]
     float attackRange = 1;
     [SerializeField]
-    Vector2 attackCenter;
+    Vector2 center;
 
     [SerializeField]
     float updateRate = 0.2f;
@@ -47,7 +47,7 @@ public class Enemy : CharacterController
             return;
 
         Vector2 targetPos = GameManager.Player.transform.position;
-        float distanceToTarget = Vector2.Distance(targetPos, transform.TransformPoint((Vector3)attackCenter));
+        float distanceToTarget = Vector2.Distance(targetPos, transform.TransformPoint((Vector3)center));
 
         if (distanceToTarget < attackRange)
         {
@@ -113,10 +113,11 @@ public class Enemy : CharacterController
         if (Application.isEditor)
             initialPos = transform.position;
 
+        Vector3 pos = transform.TransformPoint((Vector3)center);
         Gizmos.color = new Color(0, 0, 0, 0.5f);
-        Gizmos.DrawSphere(transform.TransformPoint((Vector3)attackCenter), attackRange);
+        Gizmos.DrawSphere(pos, attackRange);
         Gizmos.color = new Color(1, 0, 0, 0.25f);
-        Gizmos.DrawSphere(transform.position, visionRange);
+        Gizmos.DrawSphere(pos, visionRange);
         Gizmos.color = new Color(0, 0, 1, 0.15f);
         Gizmos.DrawWireSphere(initialPos, maxDistanceFromStart);
         //Gizmos.DrawSphere(initialPos, maxDistanceFromStart);
