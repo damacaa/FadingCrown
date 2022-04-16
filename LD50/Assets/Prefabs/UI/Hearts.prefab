@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 50, y: -50}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018625776932391011
 MonoBehaviour:
@@ -78,3 +78,4 @@ MonoBehaviour:
   hearts: []
   player: {fileID: 0}
   heart: {fileID: 2879870906698245720, guid: e4a0a3fb342ba4126b4bb0cb7dc4dd7f, type: 3}
+  maxhealth: 0
