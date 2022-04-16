@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_Sprite: {fileID: 5947567257778668535, guid: fdedf506b79976a4cb67fb6b409cb0a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -212,7 +212,8 @@ MonoBehaviour:
   contactDamage: 1
   maxDistanceFromStart: 10
   visionRange: 5
-  attackRange: 1
+  attackRange: 0.57
+  center: {x: 0.3, y: 0}
   updateRate: 0.2
 --- !u!114 &7664938923980806655
 MonoBehaviour:
@@ -226,6 +227,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e097a41016ce2834a90f69a6da706ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jump: {fileID: 0}
+  dash: {fileID: 0}
+  slash: {fileID: 0}
+  getDamage: {fileID: 0}
+  die: {fileID: 0}
+  land: {fileID: 0}
 --- !u!58 &318555984
 CircleCollider2D:
   m_ObjectHideFlags: 0

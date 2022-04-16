@@ -60,23 +60,23 @@ public class AttackController : MonoBehaviour
         RaycastHit2D[] hits = Physics2D.CircleCastAll(target.position, attackSize, Vector2.right * character.direction, attackRange, targetLayerMask);
         Debug.DrawRay(target.position, Vector2.right * character.direction * attackRange, Color.white, 1f);
 
-        AnimatedEffect splashEffect = GameObject.Instantiate(attackPrefab, transform.position + Vector3.right * character.direction, Quaternion.identity).GetComponent<AnimatedEffect>();
-        splashEffect.user = GetComponent<CharacterController>();
+        AnimatedEffect slashEffect = GameObject.Instantiate(attackPrefab, transform.position + Vector3.right * character.direction, Quaternion.identity).GetComponent<AnimatedEffect>();
+        slashEffect.user = GetComponent<CharacterController>();
         foreach (RaycastHit2D hit in hits)
         {
             if (hit.collider.TryGetComponent<CharacterController>(out CharacterController character) && character != GetComponent<CharacterController>())
             {
-                if (!splashEffect.targets.Contains(character))
-                    splashEffect.targets.Add(character);
+                if (!slashEffect.targets.Contains(character))
+                    slashEffect.targets.Add(character);
             }
         }
 
         audios.AudioSelect(SoundManager.audioType.SlashHit, selfAudio);
 
         if (character.direction < 0)
-            splashEffect.Flip();
+            slashEffect.Flip();
 
-        splashEffect.transform.parent = transform;
+        slashEffect.transform.parent = transform;
     }
 
     private void Update()
